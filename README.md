@@ -24,7 +24,7 @@ Elle m’a permis de découvrir le **monde professionnel du développement**, le
 
 ## 🧩 Expériences projets marquantes
 
-### 🐄 Plateforme de gestion et de suivi animal (IBM – Digital Factory)
+### 🐄 Plateforme de gestion et de suivi animal
 
 **Contexte :**  
 Développement d’une plateforme destinée aux **vétérinaires et éleveurs**, visant à améliorer le suivi de la santé animale et la gestion des élevages.
@@ -71,7 +71,7 @@ Développement d’une application SaaS dédiée à la **gestion du temps** pour
 
 ---
 
-### 🧪 Application métier pour techniciens de laboratoire (IBM)
+### 🧪 Application métier pour techniciens de laboratoire
 
 **Contexte :**  
 Outil interne visant à **automatiser des tâches répétitives** et améliorer la fiabilité des analyses.
@@ -131,18 +131,6 @@ Outil interne visant à **automatiser des tâches répétitives** et améliorer 
 -   Docker
 -   Jira
 -   VS Code
-
-### 3D & graphisme
-
--   Three.js
--   React Three Fiber
--   Drei
--   Rapier
--   Blender
--   Photoshop
--   Krita
-
----
 
 ### Technologies les plus maîtrisées
 
