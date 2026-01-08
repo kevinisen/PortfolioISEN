@@ -1,0 +1,401 @@
+:root {
+  --color-text: #111;
+  --color-muted: #666;
+  --color-border: #e5e5e5;
+  --color-bg-light: #fafafa;
+  --color-accent: #4f46e5;
+}
+
+
+/* ===== Reset minimal ===== */
+/* Cela garantit un calcul de tailles cohérent
+  (width = contenu + padding + border)
+  et évite des bugs de layout, surtout en responsive. */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  line-height: 1.6;
+    color: var(--color-text);
+  background:
+    linear-gradient(
+      135deg,
+      rgba(79, 70, 229, 0.06),
+      rgba(236, 72, 153, 0.04),
+      rgba(34, 197, 94, 0.05),
+      #ffffff 70%
+    );
+}
+
+main {
+  padding-top: 5rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.nav-links a {
+  position: relative;
+  text-decoration: none;
+}
+
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0;
+  height: 1.5px;
+  border-radius: 2px;
+  background-color: var(--color-accent);
+  transition: width 0.2s ease;
+  text-decoration: underline;
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+}
+
+/* ===== Layout global ===== */
+
+body {
+  padding: 1rem;
+}
+
+header,
+section {
+  margin-bottom: 3rem;
+}
+
+h1 {
+  font-size: 1.5rem;
+}
+
+h2 {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+p {
+  max-width: 60ch;
+}
+
+a {
+  color: inherit;
+  text-decoration: underline;
+}
+
+a:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 4px;
+}
+
+/* ===== Header & Navigation ===== */
+
+.site-header {
+  padding: 1rem 1.5rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  z-index: 1000;
+
+  /* Démarcation visuelle */
+  border-bottom: 1px solid var(--color-border);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.2rem;
+  background: linear-gradient(
+    120deg,
+    #4f46e5,
+    #06b6d4,
+    #22c55e,
+    #eab308,
+    #ec4899
+  );
+  background-size: 300% 300%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+
+  animation: gradientMove 18s ease-in-out infinite;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  font-size: 0.9rem;
+  color: #111;
+}
+
+/* .nav-links a:hover {
+  text-decoration: underline;
+} */
+
+@media (max-width: 480px) {
+  .nav-links {
+    display: none;
+  }
+}
+
+/* ===== Correction ancre + header fixe ===== */
+
+section {
+  scroll-margin-top: 6rem;
+}
+
+/* ===== Hero ===== */
+
+#hero {
+  margin-top: 4rem;
+}
+
+.hero-intro {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--color-muted);
+}
+
+.hero-title {
+  font-size: 2rem;
+  line-height: 1.2;
+  margin: 0.5rem 0;
+  background: linear-gradient(
+    120deg,
+    #4f46e5,
+    #06b6d4,
+    #22c55e,
+    #eab308,
+    #ec4899
+  );
+  background-size: 300% 300%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+
+  animation: gradientMove 18s ease-in-out infinite;
+}
+
+@keyframes gradientMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  25% {
+    background-position: 100% 30%;
+  }
+  50% {
+    background-position: 40% 100%;
+  }
+  75% {
+    background-position: 80% 20%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-title,
+  .logo {
+    animation: none;
+    background-position: 50% 50%;
+  }
+}
+
+.hero-role {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #333;
+}
+
+.hero-description {
+  margin-top: 1.5rem;
+  font-size: 1rem;
+  color: #444;
+}
+
+@media (min-width: 768px) {
+  .hero-title {
+    font-size: 3rem;
+  }
+
+  .hero-description {
+    font-size: 1.1rem;
+  }
+}
+
+/* ===== Projets ===== */
+
+.projects-grid {
+  display: grid;
+  gap: 2rem;
+}
+
+.project-card {
+  padding: 1.5rem;
+  border: 1px solid;
+  border-radius: 8px;
+  border-color: var(--color-border);
+  background-color: var(--color-bg-light);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+}
+
+.project-card h3 {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+
+.project-context {
+  font-size: 0.9rem;
+  color: var(--color-muted);
+  margin-bottom: 0.5rem;
+}
+
+.project-features {
+  font-size: 0.95rem;
+  margin-bottom: 0.75rem;
+}
+
+.project-tech {
+  font-size: 0.85rem;
+  color: #333;
+  font-weight: 500;
+}
+
+/*
+    Grid-template-columns définit le nombre et la taille des colonnes dans une grille CSS.
+*/
+
+@media (min-width: 768px) {
+  .projects-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .projects-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* ===== Compétences ===== */
+
+.skills-grid {
+  display: grid;
+  gap: 2rem;
+}
+
+.skill-card {
+  padding: 1.5rem;
+  border: 1px solid;
+  border-radius: 8px;
+  border-color: var(--color-border);
+  background-color: var(--color-bg-light);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.skill-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+}
+
+.skill-card h3 {
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+}
+
+.skill-card ul {
+  list-style: none;
+}
+
+.skill-card li {
+  font-size: 0.95rem;
+  margin-bottom: 0.5rem;
+}
+
+@media (min-width: 768px) {
+  .skills-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .skills-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* ===== À propos ===== */
+
+#about p {
+  margin-bottom: 1.2rem;
+  font-size: 1rem;
+  color: #333;
+}
+
+/* ===== À propos : texte + image ===== */
+
+.about-content {
+  display: grid;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.about-image img {
+  width: 100%;
+  max-width: 280px;
+  border-radius: 12px;
+}
+
+@media (min-width: 768px) {
+  .about-content {
+    grid-template-columns: 1fr auto;
+    align-items: center;
+  }
+
+  .about-image img {
+    max-width: 320px;
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.08);
+  }
+}
+
+/* ===== Footer ===== */
+
+.site-footer {
+  margin-top: 4rem;
+  padding-top: 2rem;
+  margin-bottom: 1.5rem;
+  border-top: 1px solid #e5e5e5;
+  font-size: 0.85rem;
+  color: var(--color-muted);
+}
