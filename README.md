@@ -22,26 +22,127 @@ Elle m’a permis de découvrir le **monde professionnel du développement**, le
 
 ---
 
-## 🛠️ Expérience projet
+## 🧩 Expériences projets marquantes
 
-J’ai travaillé sur plusieurs projets professionnels, notamment :
+### 🐄 Plateforme de gestion et de suivi animal (IBM – Digital Factory)
 
--   **Développement d’une Digital Factory** pour un client d’IBM
--   Équipe d’environ **10 développeurs**
--   Travail en **méthodologie agile**
--   Séparation des équipes **Frontend** et **Backend**
+**Contexte :**  
+Développement d’une plateforme destinée aux **vétérinaires et éleveurs**, visant à améliorer le suivi de la santé animale et la gestion des élevages.
+
+**Fonctionnalités clés :**
+
+-   Gestion des animaux et des portées
+-   Suivi de l’état de santé
+-   Système d’alertes en cas de risque ou d’anomalie
+-   Interface multilingue (i18n)
+-   Optimisation de l’UX pour un usage terrain
+
+**Technologies :**
+
+-   React, Next.js
+-   Redux, React Router
+-   Tailwind CSS
+-   Jest
+-   Git, Jira
+-   Méthodologie Agile (Scrum)
 
 ---
 
-## 💻 Technologies & outils utilisés
+### ⏱️ Application SaaS de gestion du temps
 
--   JavaScript / TypeScript
+**Contexte :**  
+Développement d’une application SaaS dédiée à la **gestion du temps** pour des utilisateurs dans le **sport et l’e-sport**.
+
+**Fonctionnalités clés :**
+
+-   Timers et minuteurs personnalisables
+-   Agendas configurables
+-   Optimisation des performances front-end
+-   Architecture pensée pour l’évolutivité
+
+**Technologies :**
+
+-   React, Next.js
+-   Redux
+-   Tailwind CSS
+-   Jest
+-   HTML5 / CSS3
+-   Git, Jira
+
+---
+
+### 🧪 Application métier pour techniciens de laboratoire (IBM)
+
+**Contexte :**  
+Outil interne visant à **automatiser des tâches répétitives** et améliorer la fiabilité des analyses.
+
+**Fonctionnalités clés :**
+
+-   Automatisation de flux de travail
+-   Interfaces ergonomiques et accessibles
+-   Intégration d’API backend
+-   Amélioration significative des temps de réponse
+
+**Technologies :**
+
 -   React
+-   React Router
+-   HTML5 / CSS3
+-   Git, Jira
+
+---
+
+## 🛠️ Technologies & outils
+
+### Langages
+
+-   JavaScript
+-   TypeScript
+-   Python
+-   Golang
+-   C
+
+### Frontend
+
+-   React
+-   Next.js
+-   Vue.js
 -   Angular
+-   Tailwind CSS
+-   HTML5 / CSS3
+
+### State management & librairies
+
+-   Redux
+-   React Router
+-   React Hook Form
+-   Jest
+
+### Backend & data
+
+-   Node.js
+-   PostgreSQL
+-   MongoDB
+-   MySQL
+
+### DevOps & outils
+
 -   Git
 -   Docker
--   Python
--   Node.js
+-   Jira
+-   VS Code
+
+### 3D & graphisme
+
+-   Three.js
+-   React Three Fiber
+-   Drei
+-   Rapier
+-   Blender
+-   Photoshop
+-   Krita
+
+---
 
 ### Technologies les plus maîtrisées
 
