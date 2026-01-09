@@ -21,164 +21,84 @@
                     <li><a href="#projects">Projets</a></li>
                     <li><a href="#skills">Compétences</a></li>
                     <li><a href="#about">À propos</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
         </header>
 
         <main>
-            <section id="hero">
-                <p class="hero-intro">Bonjour, je suis</p>
-                <h2 class="hero-title">Kevin Neth</h2>
-                <p class="hero-role">
-                    AI Developer / MLOps engineer / Fullstack
-                </p>
-
-                <p class="hero-description">
-                    Développeur avec plus de 5 ans d’expérience, actuellement en
-                    transition vers l’intelligence artificielle et le MLOps,
-                    avec une solide base en développement logiciel et une montée
-                    en compétence active sur les technologies IA.
-                </p>
-            </section>
+            <section id="hero"></section>
 
             <section id="projects">
                 <h2>Projets</h2>
 
-                <div class="projects-grid">
-                    <article class="project-card">
-                        <h3>Plateforme de gestion animale</h3>
-                        <p class="project-context">
-                            Digital Factory IBM — plateforme destinée aux
-                            vétérinaires et éleveurs.
-                        </p>
-                        <p class="project-features">
-                            Gestion des animaux, alertes santé, interface
-                            multilingue.
-                        </p>
-                        <p class="project-tech">
-                            React · Next.js · Redux · Tailwind · Jest
-                        </p>
-                    </article>
-
-                    <article class="project-card">
-                        <h3>Application SaaS de gestion du temps</h3>
-                        <p class="project-context">
-                            Application SaaS pour le sport et l’e-sport.
-                        </p>
-                        <p class="project-features">
-                            Timers, agendas personnalisés, optimisation des
-                            performances.
-                        </p>
-                        <p class="project-tech">
-                            React · Next.js · Redux · Tailwind
-                        </p>
-                    </article>
-
-                    <article class="project-card">
-                        <h3>Application métier laboratoire</h3>
-                        <p class="project-context">
-                            Outil interne pour techniciens de laboratoire.
-                        </p>
-                        <p class="project-features">
-                            Automatisation de tâches, intégration API, UX
-                            optimisée.
-                        </p>
-                        <p class="project-tech">React · HTML · CSS · Git</p>
-                    </article>
-                </div>
+                <div
+                    class="projects-grid"
+                    id="projects-container"
+                ></div>
             </section>
 
             <section id="skills">
                 <h2>Compétences</h2>
 
-                <div class="skills-grid">
-                    <article class="skill-card">
-                        <h3>Frontend</h3>
-                        <ul>
-                            <li>React</li>
-                            <li>Next.js</li>
-                            <li>Vue.js</li>
-                            <li>Angular</li>
-                            <li>HTML5 / CSS3</li>
-                            <li>Tailwind CSS</li>
-                        </ul>
-                    </article>
+                <div
+                    class="skills-filters"
+                    id="skills-filters"
+                ></div>
 
-                    <article class="skill-card">
-                        <h3>Langages</h3>
-                        <ul>
-                            <li>JavaScript</li>
-                            <li>TypeScript</li>
-                            <li>Python</li>
-                            <li>Golang</li>
-                            <li>C</li>
-                        </ul>
-                    </article>
-
-                    <article class="skill-card">
-                        <h3>Backend & Data</h3>
-                        <ul>
-                            <li>Node.js</li>
-                            <li>PostgreSQL</li>
-                            <li>MongoDB</li>
-                            <li>MySQL</li>
-                        </ul>
-                    </article>
-
-                    <article class="skill-card">
-                        <h3>DevOps & Outils</h3>
-                        <ul>
-                            <li>Git</li>
-                            <li>Docker</li>
-                            <li>Jira</li>
-                            <li>VS Code</li>
-                        </ul>
-                    </article>
-                </div>
+                <div
+                    class="skills-grid"
+                    id="skills-container"
+                ></div>
             </section>
 
             <section id="about">
                 <h2>À propos</h2>
 
-                <div class="about-content">
-                    <div class="about-text">
-                        <p>
-                            Issu de l’école 42, j’ai commencé ma carrière par un
-                            stage chez IBM, avant d’y être recruté en tant que
-                            Frontend Developer pendant trois ans. J’y ai
-                            travaillé sur des projets à dimension
-                            internationale, au sein d’équipes agiles et
-                            pluridisciplinaires.
-                        </p>
+                <div
+                    class="about-content"
+                    id="about-content"
+                ></div>
+            </section>
 
-                        <p>
-                            J’ai ensuite poursuivi mon parcours en freelance, où
-                            j’ai participé au développement d’applications SaaS
-                            et à la création de Proofs of Concept pour
-                            différents clients.
-                        </p>
+            <section id="contact">
+                <h2>Contact</h2>
 
-                        <p>
-                            Aujourd’hui, je souhaite orienter ma carrière vers
-                            l’intelligence artificielle, avec un objectif à
-                            moyen terme de poste en ML Ops, afin de travailler
-                            sur des problématiques de data, de déploiement et
-                            d’industrialisation des modèles.
-                        </p>
-                    </div>
-
-                    <div class="about-image">
-                        <img
-                            src="assets/images/ai_pic.jpg"
-                            alt="Portrait de Kevin Neth"
+                <form
+                    id="contact-form"
+                    novalidate
+                >
+                    <div class="form-group">
+                        <label for="name">Nom</label>
+                        <input
+                            type="text"
+                            id="name"
                         />
                     </div>
-                </div>
+
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input
+                            type="email"
+                            id="email"
+                        />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message"></textarea>
+                    </div>
+
+                    <button type="submit">Envoyer</button>
+
+                    <p id="form-feedback"></p>
+                </form>
             </section>
         </main>
 
         <footer class="site-footer">
             <p>© 2026 — Kevin Neth</p>
         </footer>
+        <script src="js/main.js"></script>
     </body>
 </html>
